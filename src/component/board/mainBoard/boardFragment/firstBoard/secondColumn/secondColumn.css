@@ -1,0 +1,63 @@
+.secondColumn {
+  flex: 3;
+}
+.secondColumnWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  gap: 15px;
+  justify-content: space-between;
+}
+.box1,
+.box2,
+.box3,
+.box4 {
+  box-sizing: border-box;
+  padding: 5px;
+  width: 47%;
+  height: 53%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: -3px 4px 23px -17px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: -3px 4px 23px -17px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: -3px 4px 23px -17px rgba(0, 0, 0, 0.79);
+}
+.secondColumnWrapper > div:first-child,
+.secondColumnWrapper > div:nth-child(2) {
+  height: 40%;
+}
+
+.box1,
+.box2 {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-size: 13px;
+}
+.box1Title,
+.box2Title {
+  flex: 1;
+}
+.box1Resusechart,
+.box2Resusechart {
+  flex: 3;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+}
+.box1Price,
+.box2Price {
+  flex: 1;
+}
+
+/* Responsiveness section */
+@media screen and (max-width: 510px) {
+  .secondColumnWrapper div {
+    justify-content: space-around;
+    width: 45%;
+    min-width: 100px;
+  }
+}

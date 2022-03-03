@@ -1,0 +1,21 @@
+.secondBoardWrapper {
+  display: flex;
+
+  height: 25vh;
+  gap: 18px;
+}
+.second-firstColumn {
+  flex: 3;
+}
+.second-secondColumn {
+  flex: 4;
+}
+.second-firstColumn,
+.second-secondColumn {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: -3px 4px 23px -17px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: -3px 4px 23px -17px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: -3px 4px 23px -17px rgba(0, 0, 0, 0.79);
+}

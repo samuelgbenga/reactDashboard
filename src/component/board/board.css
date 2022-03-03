@@ -1,0 +1,20 @@
+.board {
+  flex: 5;
+  box-sizing: border-box;
+  padding: 30px 25px;
+}
+.topBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.toggleBar {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .toggleBar {
+    display: flex;
+  }
+}

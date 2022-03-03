@@ -1,0 +1,21 @@
+.thirdBoardWrapper {
+  display: flex;
+
+  height: 25vh;
+  gap: 18px;
+}
+.third-firstColumn {
+  flex: 3;
+}
+.third-secondColumn {
+  flex: 4;
+}
+.third-firstColumn,
+.third-secondColumn {
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: -3px 4px 23px -17px rgba(0, 0, 0, 0.79);
+  -webkit-box-shadow: -3px 4px 23px -17px rgba(0, 0, 0, 0.79);
+  -moz-box-shadow: -3px 4px 23px -17px rgba(0, 0, 0, 0.79);
+}

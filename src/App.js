@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from "./component/sidebar/Sidebar";
+import Board from "./component/board/Board";
+import "./app.css";
+import { useState } from "react";
 
 function App() {
+  const [sToggle, setsToggle] = useState(false);
+
+  const callback = (cToggle) => {
+    setsToggle(cToggle);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Sidebar toggly={sToggle} />
+      <Board parentCallback={callback} />
     </div>
   );
 }
