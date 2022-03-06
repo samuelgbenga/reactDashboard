@@ -1,8 +1,11 @@
+.thirdBoardContainer {
+  width: 100%;
+}
 .thirdBoardWrapper {
   display: flex;
-
   height: 25vh;
   gap: 18px;
+  width: 100%;
 }
 .third-firstColumn {
   flex: 3;

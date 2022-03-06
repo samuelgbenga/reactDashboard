@@ -3,8 +3,10 @@
   flex-direction: row;
   gap: 25px;
   height: 30vh;
+  width: 100%;
 }
 .firstColumn {
+  width: 100%;
   padding: 15px;
   flex: 4;
   background-color: white;
@@ -51,7 +53,7 @@
 }
 
 /* Responsiveness section */
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 890px) {
   .firstBoardWrapper {
     flex-direction: column;
     height: 80vh;

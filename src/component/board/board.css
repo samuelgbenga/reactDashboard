@@ -2,6 +2,7 @@
   flex: 5;
   box-sizing: border-box;
   padding: 30px 25px;
+  width: 100%;
 }
 .topBar {
   width: 100%;
@@ -18,3 +19,8 @@
     display: flex;
   }
 }
+/* @media screen and (max-width: 890px) {
+  .board {
+    position: relative;
+  }
+} */

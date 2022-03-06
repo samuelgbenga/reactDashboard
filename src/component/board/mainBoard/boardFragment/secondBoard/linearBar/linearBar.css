@@ -1,0 +1,7 @@
+.linearBarRow {
+  margin: 9px;
+}
+.linerBarHeading {
+  display: flex;
+  justify-content: space-between;
+}

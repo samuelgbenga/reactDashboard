@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="container">
-      <Sidebar toggly={sToggle} />
+      <Sidebar className="sidebarMain" toggly={sToggle} />
       <Board parentCallback={callback} />
     </div>
   );

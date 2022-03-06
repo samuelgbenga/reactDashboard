@@ -71,11 +71,11 @@ export default function FirstBoard() {
           <ResponsiveContainer width="95%" height="85%">
             <LineChart
               data={data}
-              margin={{ top: 30, right: 20, left: 10, bottom: 30 }}
+              margin={{ top: 10, right: 10, left: 10, bottom: 18 }}
             >
               <CartesianGrid strokeDasharray="3 1" />
-              <XAxis dataKey="name" stroke="#ccc" />
-              <YAxis dataKey="uv" stroke="#ccc" />
+              <XAxis dataKey="name" stroke="#ccc" fontSize={10} />
+              <YAxis dataKey="uv" stroke="#ccc" fontSize={10} />
               <Tooltip />
               <Line
                 type="monotone"

@@ -1,6 +1,8 @@
+.secondBoardContainer {
+  width: 100%;
+}
 .secondBoardWrapper {
   display: flex;
-
   height: 25vh;
   gap: 18px;
 }
@@ -18,4 +20,17 @@
   box-shadow: -3px 4px 23px -17px rgba(0, 0, 0, 0.79);
   -webkit-box-shadow: -3px 4px 23px -17px rgba(0, 0, 0, 0.79);
   -moz-box-shadow: -3px 4px 23px -17px rgba(0, 0, 0, 0.79);
+}
+/* media responsiveness */
+@media screen and (max-width: 600px) {
+  .secondBoardWrapper {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .second-firstColumn {
+    flex: 1;
+  }
+  .second-secondColumn {
+    flex: 1;
+  }
 }

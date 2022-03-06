@@ -1,6 +1,8 @@
 import React from "react";
 import "./secondColumn.css";
 import ResuseChart from "./resuseChart/ResuseChart";
+import ReuseCircle from "./reuseCircle/ReuseCircle";
+
 const data1 = [
   {
     name: "Mon",
@@ -103,8 +105,19 @@ export default function SecondColumn() {
           </div>
           <div className="box2Price">$1,300</div>
         </div>
-        <div className="box3"></div>
-        <div className="box4"></div>
+        <div className="box3">
+          <span>Overview</span>
+          <div className="box3Wrapper">
+            <ReuseCircle />
+          </div>
+        </div>
+        <div className="box4">
+          <span>Overview</span>
+
+          <div className="box4Wrapper">
+            <ReuseCircle />
+          </div>
+        </div>
       </div>
     </div>
   );
